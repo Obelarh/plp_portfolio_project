@@ -6,6 +6,7 @@
     <title>Portfolio Navbar</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <!-- Navbar -->
@@ -40,11 +41,14 @@
           </li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Contact</a></li>
+          <div class="nav-btn">
+            <a href="#" class="hire-me-btn">Hire Me</a>
+          </div>
+          <li class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li class="menu-icon"><i class="fa-solid fa-bars"></i></li>
         </ul>
 
-        <div class="nav-btn">
-          <a href="#" class="hire-me-btn">Hire Me</a>
-        </div>
+        
       </div>
     </nav>
     <!-- Navbar End -->
@@ -77,6 +81,46 @@
       <!-- <a href="#" class="cta-btn">View My Work</a> -->
     </div>
     <!-- Hero Section End -->
+
+    <div id="about-me" class="mb-5">
+      <div class="profile-image-container">
+        <img src="images/ENC1.jpg" alt="My Image" class="profile-image" width="300px">
+      </div>
+      <div>
+        <p>MY BIOGRAPHY</p>
+        <h3>A Web Developer Based in Nigeria</h4>
+        <p class="info">I love coding and problem solving and with the help of PLP I started working on my portfolio. I can give your business a new creative start right away. Contact me and we will discuss your project.</p>
+        <hr>
+        <div class="d-flex justify-content-between">
+          <div>
+            <p> <strong>Name:</strong> Obela Cletus</p>
+            <p> <strong>Email:</strong> obelasunday@gmail.com</p>
+          </div>
+          <div>
+            <p><strong>From:</strong> Nigeria</p>
+            <p><strong>Phone:</strong> +2349064027675</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4" id="my-works">
+      <h3 class="text-center">What i can do for you.</h3>
+      <div id="my-works-container" class="d-flex flex-wrap gap-5 justify-content-center">
+        <div id="work-item">
+          <span><i class="fa-solid fa-laptop"></i></span>
+          <p>Web Development</p>
+        </div>
+        <div id="work-item">
+          <span><i class="fa-solid fa-font"></i></span>
+          <p>App Development</p>
+        </div>
+        <div id="work-item">
+          <span><i class="fa-solid fa-camera"></i></span>
+          <p>Photography</p>
+        </div>
+      </div>
+    </div>
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>

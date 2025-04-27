@@ -103,6 +103,13 @@ body {
   display: flex;
 }
 
+/* Search and Menu icon */
+.search-icon, .menu-icon {
+  color: #d0dede;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
 /* Button */
 .nav-btn .hire-me-btn {
   padding: 10px 20px;
@@ -190,6 +197,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+  width: 100%;
 }
 
 .hero-btns {
@@ -231,4 +239,39 @@ body {
 .hero-text{
   
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+/* Hero section ends */
+
+/* ABout Me */
+
+#about-me {
+  display: flex;
+  margin-top: 30px;
+  /* padding: 100px 0; */
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info{
+  max-width: 600px;
+  text-align: left;
+}
+
+/* My works */
+#my-works {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 30px;
+  background: #d0dede;
+  padding: 50px;
+}
+#work-item{
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 20px;
 }
