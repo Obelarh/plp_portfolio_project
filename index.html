@@ -11,7 +11,7 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-      <div class="container">
+      <div class="nav_container">
         <div class="logo">
           <a href="#">UI Portfolio</a>
         </div>
@@ -86,7 +86,7 @@
       <div class="profile-image-container">
         <img src="images/ENC1.jpg" alt="My Image" class="profile-image" width="300px">
       </div>
-      <div>
+      <div class="profile-text">
         <p>MY BIOGRAPHY</p>
         <h3>A Web Developer Based in Nigeria</h4>
         <p class="info">I love coding and problem solving and with the help of PLP I started working on my portfolio. I can give your business a new creative start right away. Contact me and we will discuss your project.</p>
@@ -105,20 +105,41 @@
     </div>
 
     <div class="mt-4" id="my-works">
-      <h3 class="text-center">What i can do for you.</h3>
-      <div id="my-works-container" class="d-flex flex-wrap gap-5 justify-content-center">
+      <div class="text-center mb-4">
+        <h3 class="text-center">What i can do for you.</h3>
+      </div>
+      <div id="my-works-container" class="d-flex flex-wrap gap-5 justify-content-center mb-4">
         <div id="work-item">
           <span><i class="fa-solid fa-laptop"></i></span>
-          <p>Web Development</p>
+          <p class="work-text"><strong>Web Development</strong></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi modi, cupiditate pariatur tempore omnis hic!</p>
         </div>
         <div id="work-item">
           <span><i class="fa-solid fa-font"></i></span>
-          <p>App Development</p>
+          <p class="work-text"> <strong>App Development</strong></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi modi, cupiditate pariatur tempore omnis hic!</p>
         </div>
         <div id="work-item">
           <span><i class="fa-solid fa-camera"></i></span>
-          <p>Photography</p>
+          <p class="work-text"><strong> Photography </strong></p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi modi, cupiditate pariatur tempore omnis hic!</p>
         </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <p>More Services <i class="fa-solid fa-arrow-right"></i></p>
+      </div>
+    </div>
+
+    <!-- Featured Skill -->
+    <div id="featured-skills" class="mb-5 d-flex flex-row align-items-center">
+      <div class="feature-image-container">
+        <img src="images/pexels-pixabay-270366.jpg" alt="My Skill Image" class="feature-image" width="300px">
+      </div>
+      <div class="feature-text">
+        <p>MY SKILLS</p>
+        <p><strong>My Featured Skill</strong></p>
+        
       </div>
     </div>
 
