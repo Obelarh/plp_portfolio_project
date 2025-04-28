@@ -287,6 +287,17 @@ body {
     display: flex;
   }
 
+  .container{
+    transform: translateX(-100%); /* Start off-screen to the left */
+            opacity: 0; /* Start invisible */
+            transition: transform 0.8s ease-out, opacity 0.8s ease-out; /* Smooth slide-in */
+  }
+
+  .container.slide-in {
+    transform: translateX(0); /* Slide into view */
+    opacity: 1; /* Make visible */
+}
+
   .dropdown:hover .dropdown-menu {
     display: none; /* Disable hover open on mobile */
   }
@@ -306,4 +317,108 @@ body {
   gap: 30px;
   margin-top: 30px;
   margin-bottom: 40px;
+}
+
+
+
+/* BAR */
+
+.container {
+  background-color: #fff;
+  display: flex;
+  max-width: 900px;
+  width: 90%;
+  transform: translateX(-100%); /* Start off-screen to the left */
+  opacity: 0; /* Start invisible */
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out; /* Smooth slide-in */
+}
+
+.container.slide-in {
+  transform: translateX(0); /* Slide into view */
+  opacity: 1; /* Make visible */
+}
+
+/* Left Section - Image Placeholder */
+.left-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 400px;
+  height: auto; /* Adjust height as needed */
+  border-radius: 8px;
+  background-color: #ddd; /* Placeholder grey */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  font-size: 1.2em;
+  text-align: center;
+  overflow: hidden; /* To contain the rounded corners */
+}
+
+.image-placeholder img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Right Section - Skills and Description */
+.right-section {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.description {
+  margin-bottom: 30px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.skill-bar {
+  margin-bottom: 20px;
+}
+
+.skill-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.bar-container {
+  background-color: #eee;
+  border-radius: 5px;
+  height: 10px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bar {
+  background-color: #2ecc71; /* Green color for the skill bar */
+  height: 100%;
+  border-radius: 5px;
+  width: 0%; /* Initial width for animation */
+  transition: width 0.8s ease-in-out; /* Enable transition for animation */
+}
+
+/* Specific skill widths (data attributes for JavaScript) */
+.skill-graphic-design .bar {
+  width: 75%;
+}
+
+.skill-ideas-technology .bar {
+  width: 90%;
+}
+
+.skill-branding-design .bar {
+  width: 40%;
+}
+
+.skill-responsive-web-design .bar {
+  width: 60%;
 }
